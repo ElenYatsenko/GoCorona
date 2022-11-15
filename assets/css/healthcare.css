@@ -1,0 +1,108 @@
+/*HEALTHCARE*/
+
+.healthcare {
+  padding: 80px 0 30px 0;
+}
+.healthcare__block-text {
+  margin: 0 0 45px 0;
+}
+.healthcare__items {
+  display: flex;
+}
+.healthcare__column {
+  position: relative;
+  padding: 0 36px;
+  flex: 0 1 33.333%;
+}
+.item__healthcare {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 35px 17px;
+}
+.item__healthcare__icon {
+  margin: 0 0 58px 0;
+}
+.item__healthcare__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 138.5%;
+  color: #000;
+  margin: 0 0 4px 0;
+}
+.item__healthcare__text {
+  line-height: 138.5%;
+}
+.healthcare__column_1::before,
+.healthcare__column_1::after {
+  content: "";
+  position: absolute;
+  background-color: #ec5863;
+  border-radius: 16px;
+}
+.healthcare__column_1::before {
+  width: 65px;
+  height: 65px;
+  bottom: -35px;
+  left: 15px;
+  transform: rotate(-30deg);
+}
+.healthcare__column_1::after {
+  width: 97px;
+  height: 97px;
+  top: 35px;
+  right: 0px;
+  border-radius: 30px;
+  transform: rotate(30deg);
+}
+.healthcare__column_2::after {
+  content: "";
+  position: absolute;
+  background-color: #ec5863;
+  width: 127px;
+  height: 127px;
+  bottom: -35px;
+  right: -35px;
+  border-radius: 30px;
+  transform: rotate(55deg);
+}
+.healthcare__column_3::after {
+  content: "";
+  position: absolute;
+  background-color: #ec5863;
+  width: 65px;
+  height: 65px;
+  top: -25px;
+  right: 10px;
+  border-radius: 16px;
+  transform: rotate(34deg);
+}
+
+@media (max-width: 1087px) {
+  .healthcare__column {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .healthcare {
+    padding: 30px 0 30px 0;
+  }
+  .healthcare__items {
+    flex-direction: column;
+  }
+  .healthcare__column_3::after {
+    width: 0;
+    height: 0;
+  }
+  .healthcare__column:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
